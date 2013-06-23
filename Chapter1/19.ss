@@ -2,8 +2,7 @@
   (lambda (lst n x)
     (cond 
       ((null? lst) '())
-      ((zero? n) 
-       (cons x (cdr lst)))
+      ((zero? n) (cons x (cdr lst)))
       (else
         (cons 
           (car lst)

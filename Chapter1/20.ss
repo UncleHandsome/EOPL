@@ -1,3 +1,9 @@
+; (count-occurrences 'x '((f x) y (((x z) x))))
+; 3
+; (count-occurrences 'x '((f x) y (((x z) () x))))
+; 3
+; (count-occurrences 'w '((f x) y (((x z) x))))
+; 0
 (define count-occurrences
   (lambda (s slist)
     (cond
